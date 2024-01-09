@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="https://assistantbot.lol/img/assistantPFP.png" />
+    <title>Assistant</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Multipurpose discord bot, helping you manage your servers with ease." />
+    <meta name="twitter:card" content="player cards" />
+    <meta name="twitter:site" content="https://assistantbot.lol" />
+    <meta property="og:title" content="Assistant" />
+    <meta content="#E5E5E5" data-react-helmet="true" name="theme-color">
+    <meta property="og:description" content="Multipurpose discord bot, helping you manage your servers with ease." />
+    <meta property="og:url" content="https://asssistantbot.lol" />
+    <meta property="og:image" content="https://assistantbot.lol/img/assistantPFP.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:locale" content="en" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: black; 
+            color: white;
+        }
+        pre {
+            white-space: pre-wrap;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+Support @ https://discord.gg/assistant
+Default Prefix: ; | () = Required, <> = Optional
+
+
+┌── Moderation
+|    ├──  restore: Restore a users role (2 hour period)
+|    ├──  setjail: Setup the jail module
+|    ├──  unsetjail: Unset the jail module
+|    ├──  jail: Jail a user
+|    ├──  unjail: Unjail a user
+|    ├──  jailed: Show all jailed users
+|    ├──  voicemute: Mute a user in vc
+|    ├──  voiceunmute: Unmute a user in vc
+|    ├──  voicedeafen: Deafen a user in vc
+|    ├──  voiceundeafen: Undeafen a user in vc
+|    ├──  clear: Purge messages
+|    |   ├── clear invites: Purge all invites
+|    |   ├── clear contains: Purge all messages containing a certain phrase
+|    |   ├── clear images: Purge all image messages
+|    ├──  purge: Purge messages
+|    ├──  botclear[bc|bp|botpurge]: Purge messages by bots
+|    ├──  lock: Lock a channel
+|    ├──  unlock: Unlock a channel
+|    ├──  slowmode: Add slowmode to the channel
+|    ├──  mute[timeout|stfu]: Mute a user
+|    ├──  unmute[untimeout]: Unmute a user
+|    ├──  ban: Ban a user from the server
+|    ├──  kick: Kick a user from the server
+|    ├──  unbanall: Unban all users from the server
+|    ├──  unban: Unban a user
+|    ├──  strip: Remove roles with dangerous permissions from a user
+|    ├──  nickname[nick]: Change the nickname of a user
+|    ├──  warn: Warn a user
+|    |   ├── warn clear: Clear somebodys warnings
+|    |   ├── warn list: Show warns
+|    ├──  warns: View your/mentioned users warns
+|    ├──  nuke: Nuke the current channel
+|    ├──  roleall: Role all users
+|    ├──  role[r]: Role a user
+┌── Responders
+|    ├──  autoreact: 
+|    |   ├── autoreact remove: Remove an autoreaction
+|    |   ├── autoreact list: View all autoreactions in the server
+|    |   ├── autoreact add: Add an autoreaction (autoreact add [message], [emotes])
+|    ├──  autoresponder[ar]: 
+|    |   ├── autoresponder remove: Remove a autoresponder
+|    |   ├── autoresponder list: View all autoresponders in the server
+|    |   ├── autoresponder add: Add a autoresponder
+┌── Utility
+|    ├──  clearsnipes[cs]: Clear all snipe data
+|    ├──  seen: Check if I saw a member
+|    ├──  afk: Let everyone know you are away
+|    ├──  editsnipe[es]: Snipe the most recent edited message
+|    ├──  reactionsnipe[rs]: Snipe the most recent removed reaction
+|    ├──  snipe[s]: Snipe the latest deleted message
+|    ├──  membercount[mc]: View the current membercount
+|    ├──  avatar[av]: See user's avatar
+|    ├──  serveravatar[sav]: See user's avatar
+|    ├──  roleinfo[ri]: See role information
+|    ├──  weather: 
+|    ├──  inrole: See all members in a role
+|    ├──  joins: See all members joined today
+|    ├──  muted: See all muted mebmers
+|    ├──  bans: See all banned users
+|    ├──  boosters: See people who are boosting the server
+|    |   ├── boosters lost: Show boosters lost
+|    ├──  roles: See all roles in the server
+|    ├──  bots: See all bots in the server
+|    ├──  userinfo[whois|ui|user]: Show user information
+|    ├──  serverbanner[guildbanner]: Get the servers banner
+|    ├──  servericon[guildicon|guildavatar]: Get the servers icon
+|    ├──  serversplash[guildsplash]: Get the servers splash
+|    ├──  serverinfo[si]: 
+|    ├──  sbanner: Gets the banner of a server
+|    ├──  splash: Gets the splash of a server
+|    ├──  sicon: Gets the icon of a server
+|    ├──  firstmessage[firstmsg]: Grab the first message in a channel
+|    ├──  picperms: Give somebody picture permissions
+|    ├──  banner[ub]: 
+|    ├──  test: 
+┌── info
+|    ├──  botinfo[bi|bot|info|about]: 
+|    ├──  ping: Check the bots connection
+|    ├──  invite[support|inv]: Invite Assistant
+┌── owner
+|    ├──  servers[guilds]: 
+|    ├──  portal: 
+|    ├──  geterror[trace]: 
+|    ├──  getkey: 
+|    ├──  leaveguild: 
+┌── tags
+|    ├──  tag: 
+|    |   ├── tag create: 
+|    |   ├── tag list: 
+|    |   ├── tag delete: 
+    </pre>
+</body>
+</html>
